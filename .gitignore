@@ -1,0 +1,23 @@
+# Môi trường ảo (uv / python)
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Thư mục dữ liệu (Không đưa lên Git vì quá nặng)
+source_data/
+prepared_single_chromosomes/
+generated_data/
+processed_data_256/
+dataset/
+
+# Kết quả và Model checkpoints
+results/
+*.keras
+*.h5
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+[project]
+name = "nst-analysis"
+version = "0.1.0"
+description = "Phân tích và tách Hình thái Nhiễm Sắc Thể (NST) bằng Hybrid Attention U-Net"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "tensorflow>=2.10.0",
+    "opencv-python>=4.8.0",
+    "Pillow>=10.0.0",
+    "numpy>=1.23.0",
+    "tqdm>=4.66.0"
+]
+
+[project.scripts]
+nst = "main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+managed = true
